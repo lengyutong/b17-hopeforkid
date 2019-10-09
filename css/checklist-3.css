@@ -1,0 +1,80 @@
+/* card边界设定 */
+.card{
+  margin: 10px 0px 10px 0px;
+}
+
+/* card-body边界设定 */
+.card-body{
+  padding: 12px 12px 12px 12px;
+}
+
+/* 用id实现标题字居中 */
+#font-in-center{
+  text-align: center;
+}
+
+
+/* 点击以后的效果 */
+ input[type=checkbox].form-input:checked + label.form-check-label{
+  text-decoration: line-through;
+  background: rgb(153, 153, 153);
+  border: rgb(153, 153, 153);
+  color: #fff;
+  display: block；
+}
+
+
+/* 点击以前的效果 */
+label {
+  border:2px solid #ccc;
+  border-radius: 5px;
+  padding:10px;
+  margin: 0px 0 0 0;
+  display: block;
+ }
+ 
+ /* 鼠标悬停的效果 */
+ label:hover {
+  background:#eee;
+  cursor:pointer;
+ }
+
+
+ /* 隐藏原本的checkbox和改变大小 */
+ input[type=checkbox]
+ {
+   /* Double-sized Checkboxes */
+   -ms-transform: scale(0.01); /* IE */
+   -moz-transform: scale(0.01); /* FF */
+   -webkit-transform: scale(0.01); /* Safari and Chrome */
+   -o-transform: scale(0.01); /* Opera */
+   transform: scale(0.01);
+   opacity: 0
+ }
+
+
+ /* button的效果 */
+ input[type=button] {
+  background-color: #005c97;
+  
+  border: 1px;
+  border-radius: 5px;
+  color: white;
+  padding: 6px 18px 6px 18px;
+  text-decoration: none;
+  display: block;
+  margin: 8px;
+  text-align: center;
+}
+
+ /* button鼠标悬停的效果 */
+input[type=button]:hover {
+  background:#001d34;
+ }
+
+ /* button不能点击时的的效果 */
+ input[type=button]:disabled {
+  background:rgb(153, 153, 153);
+ }
+
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>HopeForKid</title>
+        <!-- Font Awesome -->
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+
+        <!-- Your custom styles (optional) -->
+        
+        <!-- google font styles  -->
+        <!-- 写的css  -->
+        <link href="checklist-3.css" rel="stylesheet">
+        <!-- 写的js  -->
+        
+        <!-- jquery引用  -->
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(".form-input").on( "click", function() {
+                    if($(".form-input:checked").length == $(".form-input").length){
+  	                    $('#checklist-done').prop('disabled', false);
+                    }
+                    else{
+  	                    $('#checklist-done').prop('disabled', true);
+                    }
+                    });
+            });
+        </script>
+        
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+
+                    <div class="card" >
+                        <div class="card-body">
+                            <h2 id="font-in-center">leaving checklist</h2>
+                        </div>
+                    </div>
+    
+                    <div class="card">
+
+                        <div class="card-body">
+                            <input type="checkbox" id="1" class="form-input" name="checked-test" >
+                            <label class="form-check-label" for="1" >1. When your child starts crawling, install safety guards across entries to stairs and balconies. And you still need to supervise your child on stairs and balconies.</label>
+
+                            <input type="checkbox" id="2" class="form-input" name="checked-test">
+                            <label class="form-check-label" for="2" >2. When your child starts climbing, lock windows – particularly upper-storey windows – restrict window openings, or shield them with firmly attached window guards. This will stop your child climbing out and falling.</label>
+
+                            <input type="checkbox" id="3" class="form-input" name="checked-test">
+                            <label class="form-check-label" for="3" >3. Leave a hall light on at night, or use sensor lights to make it easier for older children to get to the toilet without tripping.</label>
+
+                            <input type="checkbox" id="4" class="form-input" name="checked-test">
+                            <label class="form-check-label" for="4" >4. Keep hot drinks away from and out of reach of children.</label>
+
+                            <input type="checkbox" id="5" class="form-input" name="checked-test">
+                            <label class="form-check-label" for="5" >5. removing potential poisons</label>
+
+                            <input type="checkbox" id="6" class="form-input" name="checked-test">
+                            <label class="form-check-label" for="6" >6. storing chemicals and medicines up high in a locked cupboard or cabinet</label>
+
+                            <input type="checkbox" id="7" class="form-input" name="checked-test">
+                            <label class="form-check-label" for="7" >7. putting a child-safety latch on the doors of cupboards where you keep household poisons.</label>
+
+                            
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal" id="checklist-done" disabled="true">
+                                Done
+                            </button>
+
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Congratulations!</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                         You finished the check and can leave safely.
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                                     
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                        </div>
+
+                    </div>
+    
+                    
+
+                </div>
+            </div>
+        </div>
+          
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
